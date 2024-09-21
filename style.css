@@ -19,6 +19,28 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+.titulo {
+  z-index: 2;
+  margin-bottom: 180px;
+  color: rgb(206, 206, 172);
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 80%;
+  font-size: 3vh;
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .night {
   position: fixed;
   left: 50%;
